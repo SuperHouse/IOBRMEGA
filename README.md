@@ -1,19 +1,19 @@
 I/O Breakout Shield (Mega)
 ==========================
-Copyright 2014 Freetronics Pty Ltd  
-Freetronics site:  <www.freetronics.com.au>  
+Copyright 2017 SuperHouse Automation Pty Ltd  
+SuperHouse site:  <www.superhouse.tv>  
 
-Breaks out sets of I/O pins to 2x5 pin headers.
+Breaks out sets of I/O pins to 2x6 pin headers.
 
 Features:
 
- * 8 x 2x5 shrouded pin headers
- * Each header provides 8 x data lines, 2 x GND, 2 x VCC
+ * 8 x 2x6 shrouded pin headers
+ * Each header provides 8 x data lines, GND, VIN, IOREF, and RESET
 
 
 More information is available at:
 
-  http://www.freetronics.com.au/iobrmega
+  http://www.superhouse.tv/iobrmega
 
 
 INSTALLATION
