@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="9.4.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -66,6 +67,9 @@
 <layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="61" name="pt_docu" color="7" fill="0" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -90,8 +94,13 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="FRNTMAAT1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="FRNTMAAT2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="117" name="BACKMAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="KAP_TEKEN" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="KAP_MAAT1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
@@ -101,15 +110,41 @@
 <layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="SMDSTROOK" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="133" name="bottom_silk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="silk_top" color="7" fill="1" visible="no" active="no"/>
+<layer number="135" name="silk_bottom" color="7" fill="1" visible="no" active="no"/>
+<layer number="136" name="silktop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="silkbottom" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="GND@2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="145" name="DrillLegend_01-16" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="p_Milling" color="3" fill="9" visible="yes" active="yes"/>
+<layer number="147" name="COVER" color="14" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
 <layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
 <layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="166" name="AntennaArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="168" name="4mmHeightArea" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="190" name="Comments" color="12" fill="1" visible="yes" active="yes"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
 <layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
@@ -419,66 +454,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </library>
 <library name="freetronics-master-v1">
 <packages>
-<package name="TACTILE_SWITCH_SMD">
-<wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.54" x2="-1.54" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-1.54" y1="2.54" x2="1.54" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="1.54" y1="2.54" x2="2.54" y2="1.54" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="1.24" x2="2.54" y2="-1.24" width="0.2032" layer="21"/>
-<wire x1="2.54" y1="-1.54" x2="1.54" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="1.54" y1="-2.54" x2="-1.54" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
-<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
-<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
-<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
-<smd name="1" x="-2.667" y="1.905" dx="0.762" dy="1.778" layer="1" rot="R90"/>
-<smd name="3" x="-2.667" y="-1.905" dx="0.762" dy="1.778" layer="1" rot="R90"/>
-<smd name="4" x="2.667" y="-1.905" dx="0.762" dy="1.778" layer="1" rot="R90"/>
-<smd name="2" x="2.667" y="1.905" dx="0.762" dy="1.778" layer="1" rot="R90"/>
-<text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
-</package>
-<package name="TACTILE-PTH">
-<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
-<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016"/>
-<text x="-2.54" y="3.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-</package>
-<package name="KSA_SEALED_TAC_SWITCH">
-<wire x1="0" y1="1.27" x2="0" y2="-1.27" width="0.127" layer="21"/>
-<wire x1="-1.27" y1="0" x2="1.27" y2="0" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
-<pad name="P$1" x="-3.81" y="2.54" drill="1" shape="square"/>
-<pad name="P$2" x="3.81" y="2.54" drill="1" shape="square"/>
-<pad name="P$3" x="-3.81" y="-2.54" drill="1" shape="square"/>
-<pad name="P$4" x="3.81" y="-2.54" drill="1" shape="square"/>
-</package>
 <package name="1X08">
 <wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="15.875" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
@@ -658,27 +633,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </package>
 </packages>
 <symbols>
-<symbol name="SWITCH-MOMENTARY">
-<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
-<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
-<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
-<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
-</symbol>
 <symbol name="M08">
 <wire x1="1.27" y1="-10.16" x2="-5.08" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
@@ -705,48 +659,6 @@ Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TAC_SWITCH" prefix="S" uservalue="yes">
-<description>&lt;b&gt;Momentary Switch&lt;/b&gt;
-Button commonly used for reset or general input. Spark Fun Electronics SKU : COM-00097</description>
-<gates>
-<gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="TACTILE_SWITCH_SMD">
-<connects>
-<connect gate="S" pin="1" pad="1"/>
-<connect gate="S" pin="2" pad="2"/>
-<connect gate="S" pin="3" pad="3"/>
-<connect gate="S" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="PTH" package="TACTILE-PTH">
-<connects>
-<connect gate="S" pin="1" pad="1"/>
-<connect gate="S" pin="2" pad="2"/>
-<connect gate="S" pin="3" pad="3"/>
-<connect gate="S" pin="4" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="KSA_SEALED" package="KSA_SEALED_TAC_SWITCH">
-<connects>
-<connect gate="S" pin="1" pad="P$1"/>
-<connect gate="S" pin="2" pad="P$2"/>
-<connect gate="S" pin="3" pad="P$3"/>
-<connect gate="S" pin="4" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="M08" prefix="JP" uservalue="yes">
 <description>&lt;b&gt;Header 8&lt;/b&gt;
 Standard 8-pin 0.1" header. Use with straight break away headers (SKU : PRT-00116), right angle break away headers (PRT-00553), swiss pins (PRT-00743), machine pins (PRT-00117), and female headers (PRT-00115).</description>
@@ -1349,9 +1261,9 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </deviceset>
 </devicesets>
 </library>
-<library name="freetronics-jon">
+<library name="SuperHouse-Connectors" urn="urn:adsk.eagle:library:11765989">
 <packages>
-<package name="2X6-SHROUDED">
+<package name="2X6-SHROUDED" urn="urn:adsk.eagle:footprint:11976014/1" library_version="42">
 <wire x1="-1.505" y1="0.635" x2="-1.505" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="5.77" y1="5.02" x2="5.77" y2="-17.72" width="0.2032" layer="21"/>
 <wire x1="-3.23" y1="-17.72" x2="-3.23" y2="-8.55" width="0.2032" layer="21"/>
@@ -1377,6 +1289,8 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pad name="8" x="2.54" y="-7.62" drill="1.016" shape="octagon" rot="R270"/>
 <pad name="9" x="0" y="-10.16" drill="1.016" shape="octagon" rot="R270"/>
 <pad name="10" x="2.54" y="-10.16" drill="1.016" shape="octagon" rot="R270"/>
+<pad name="11" x="0" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
+<pad name="12" x="2.54" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <text x="-1.651" y="5.334" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
 <text x="-1.651" y="-18.542" size="0.4064" layer="104">&gt;NAME</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51" rot="R270"/>
@@ -1391,14 +1305,19 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <rectangle x1="-0.254" y1="-10.414" x2="0.254" y2="-9.906" layer="51" rot="R270"/>
 <rectangle x1="-0.254" y1="-7.874" x2="0.254" y2="-7.366" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-7.874" x2="2.794" y2="-7.366" layer="51" rot="R270"/>
-<pad name="11" x="0" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
-<pad name="12" x="2.54" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <rectangle x1="-0.254" y1="-12.954" x2="0.254" y2="-12.446" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-12.954" x2="2.794" y2="-12.446" layer="51" rot="R270"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="2X6-SHROUDED" urn="urn:adsk.eagle:package:11976015/2" type="model" library_version="42">
+<packageinstances>
+<packageinstance name="2X6-SHROUDED"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="M06X2">
+<symbol name="M06X2" urn="urn:adsk.eagle:symbol:11976013/1" library_version="42">
 <wire x1="3.81" y1="-10.16" x2="-3.81" y2="-10.16" width="0.4064" layer="94"/>
 <wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
 <wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
@@ -1413,6 +1332,8 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="-1.27" y1="-5.08" x2="-2.54" y2="-5.08" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="5.08" x2="-2.54" y2="5.08" width="0.6096" layer="94"/>
 <wire x1="-1.27" y1="2.54" x2="-2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="-7.62" x2="-2.54" y2="-7.62" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
 <text x="-2.54" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-2.54" y="8.382" size="1.778" layer="95">&gt;NAME</text>
 <pin name="10" x="7.62" y="-5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
@@ -1427,17 +1348,16 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <pin name="1" x="-7.62" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="11" x="-7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1"/>
 <pin name="12" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<wire x1="-1.27" y1="-7.62" x2="-2.54" y2="-7.62" width="0.6096" layer="94"/>
-<wire x1="1.27" y1="-7.62" x2="2.54" y2="-7.62" width="0.6096" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="M06X2">
+<deviceset name="M06X2" urn="urn:adsk.eagle:component:11976016/2" library_version="42">
+<description>M12 header in 2x6 format</description>
 <gates>
 <gate name="G$1" symbol="M06X2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="2X6-SHROUDED">
+<device name="-SHROUDED" package="2X6-SHROUDED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -1452,6 +1372,243 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <connect gate="G$1" pin="8" pad="8"/>
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SuperHouse-Switches" urn="urn:adsk.eagle:library:11744182">
+<packages>
+<package name="TACTILE-PTH-6MM" urn="urn:adsk.eagle:footprint:11765872/1" library_version="12">
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.2032" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="-2.159" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-2.159" y1="-3.048" x2="2.159" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="3.048" y1="0.998" x2="3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-3.048" y1="1.028" x2="-3.048" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.2032" layer="21"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" diameter="1.8796"/>
+<text x="0" y="3.302" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="TACTILE-PTH-4.5MM" urn="urn:adsk.eagle:footprint:7065944/1" library_version="12">
+<wire x1="2.25" y1="1.016" x2="2.25" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="2.25" y1="1.27" x2="2.25" y2="1.54" width="0.2032" layer="51"/>
+<wire x1="2.25" y1="1.54" x2="1.54" y2="2.25" width="0.2032" layer="51"/>
+<wire x1="1.54" y1="-2.25" x2="2.25" y2="-1.54" width="0.2032" layer="51"/>
+<wire x1="2.25" y1="-1.54" x2="2.25" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="2.25" y1="-1.27" x2="2.25" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="2.25" x2="-2.25" y2="1.54" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="1.54" x2="-2.25" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="1.27" x2="-2.25" y2="1.016" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="-2.25" x2="-2.25" y2="-1.54" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.54" x2="-2.25" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.27" x2="-2.25" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="1.54" y1="-2.25" x2="1.159" y2="-2.25" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="-2.25" x2="-1.159" y2="-2.25" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="2.25" x2="-1.159" y2="2.25" width="0.2032" layer="51"/>
+<wire x1="1.54" y1="2.25" x2="1.159" y2="2.25" width="0.2032" layer="51"/>
+<wire x1="1.159" y1="2.25" x2="-1.159" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="-1.159" y1="-2.25" x2="1.159" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="0.4" x2="2.25" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="0.4" x2="-2.25" y2="-0.4" width="0.2032" layer="21"/>
+<wire x1="-1.54" y1="1.27" x2="-1.54" y2="0.508" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="-0.508" x2="-1.54" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="0.508" x2="-1.159" y2="-0.381" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="1.27" x2="2.25" y2="1.27" width="0.2032" layer="51"/>
+<wire x1="-2.25" y1="-1.27" x2="2.25" y2="-1.27" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.3" width="0.2032" layer="21"/>
+<pad name="1" x="-2.5" y="1.5" drill="1.016"/>
+<pad name="2" x="2.5" y="1.5" drill="1.016"/>
+<pad name="3" x="-2.5" y="-1.5" drill="1.016"/>
+<pad name="4" x="2.5" y="-1.5" drill="1.016"/>
+<text x="-2.54" y="2.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="TACTILE-PTH-12MM" urn="urn:adsk.eagle:footprint:7065959/1" library_version="12">
+<wire x1="6.25" y1="4.016" x2="6.25" y2="5.27" width="0.2032" layer="51"/>
+<wire x1="6.25" y1="5.27" x2="6.25" y2="5.54" width="0.2032" layer="51"/>
+<wire x1="6.25" y1="5.54" x2="5.54" y2="6.25" width="0.2032" layer="51"/>
+<wire x1="5.54" y1="-6.25" x2="6.25" y2="-5.54" width="0.2032" layer="51"/>
+<wire x1="6.25" y1="-5.54" x2="6.25" y2="-5.27" width="0.2032" layer="51"/>
+<wire x1="6.25" y1="-5.27" x2="6.25" y2="-4.016" width="0.2032" layer="51"/>
+<wire x1="-5.54" y1="6.25" x2="-6.25" y2="5.54" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="5.54" x2="-6.25" y2="5.27" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="5.27" x2="-6.25" y2="4.016" width="0.2032" layer="51"/>
+<wire x1="-5.54" y1="-6.25" x2="-6.25" y2="-5.54" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="-5.54" x2="-6.25" y2="-5.27" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="-5.27" x2="-6.25" y2="-4.016" width="0.2032" layer="51"/>
+<wire x1="5.54" y1="-6.25" x2="5.159" y2="-6.25" width="0.2032" layer="51"/>
+<wire x1="-5.54" y1="-6.25" x2="-5.159" y2="-6.25" width="0.2032" layer="51"/>
+<wire x1="-5.54" y1="6.25" x2="-5.159" y2="6.25" width="0.2032" layer="51"/>
+<wire x1="5.54" y1="6.25" x2="5.159" y2="6.25" width="0.2032" layer="51"/>
+<wire x1="3.159" y1="6" x2="-3.159" y2="6" width="0.2032" layer="21"/>
+<wire x1="-3.159" y1="-6" x2="3.159" y2="-6" width="0.2032" layer="21"/>
+<wire x1="6.25" y1="1" x2="6.25" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-6.25" y1="1" x2="-6.25" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="5.27" x2="-2.54" y2="0.508" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.54" y2="-5.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.508" x2="-2.159" y2="-0.381" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="5.27" x2="-2.54" y2="5.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="5.27" x2="6.25" y2="5.27" width="0.2032" layer="51"/>
+<wire x1="-6.25" y1="-5.27" x2="-2.54" y2="-5.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-5.27" x2="6.25" y2="-5.27" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.3" width="0.2032" layer="21"/>
+<pad name="1" x="-6.25" y="2.5" drill="1.5"/>
+<pad name="2" x="6.25" y="2.5" drill="1.5"/>
+<pad name="3" x="-6.25" y="-2.5" drill="1.5"/>
+<pad name="4" x="6.25" y="-2.5" drill="1.5"/>
+<text x="-2.54" y="6.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+</package>
+<package name="TACTILE_SMD-6MM" urn="urn:adsk.eagle:footprint:11872641/1" library_version="12">
+<description>SMT tactile button</description>
+<wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="1.54" x2="-1.54" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-1.54" y1="2.54" x2="1.54" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="1.54" y1="2.54" x2="2.54" y2="1.54" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="1.24" x2="2.54" y2="-1.24" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-1.54" x2="1.54" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="1.54" y1="-2.54" x2="-1.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
+<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
+<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
+<smd name="1" x="-2.54" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="3" x="-2.54" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="4" x="2.54" y="-1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<smd name="2" x="2.54" y="1.905" dx="0.762" dy="1.524" layer="1" rot="R90"/>
+<text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="TACTILE-PTH-6MM" urn="urn:adsk.eagle:package:11765874/2" type="model" library_version="12">
+<packageinstances>
+<packageinstance name="TACTILE-PTH-6MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE-PTH-4.5MM" urn="urn:adsk.eagle:package:7066371/1" type="box" library_version="12">
+<packageinstances>
+<packageinstance name="TACTILE-PTH-4.5MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE-PTH-12MM" urn="urn:adsk.eagle:package:7066386/2" type="model" library_version="12">
+<packageinstances>
+<packageinstance name="TACTILE-PTH-12MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SMD-6MM" urn="urn:adsk.eagle:package:11872642/2" type="model" library_version="12">
+<description>SMT tactile button</description>
+<packageinstances>
+<packageinstance name="TACTILE_SMD-6MM"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="SWITCH-MOMENTARY" urn="urn:adsk.eagle:symbol:11765873/1" library_version="12">
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="4.445" x2="-1.905" y2="3.175" width="0.254" layer="94"/>
+<wire x1="1.905" y1="4.445" x2="0" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="4.445" x2="-1.905" y2="4.445" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="3.175" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="1.905" y2="1.27" width="0.254" layer="94"/>
+<circle x="-2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<circle x="2.54" y="0" radius="0.127" width="0.4064" layer="94"/>
+<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-6.35" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="2"/>
+<pin name="3" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="4" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="-5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="2"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="TAC_SWITCH" urn="urn:adsk.eagle:component:11765875/4" prefix="S" uservalue="yes" library_version="12">
+<description>&lt;b&gt;Momentary Switch&lt;/b&gt;
+Tactile switch, normally-open.</description>
+<gates>
+<gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="4.5" package="TACTILE-PTH-4.5MM">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7066371/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="12" package="TACTILE-PTH-12MM">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7066386/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-PTH-6" package="TACTILE-PTH-6MM">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11765874/2"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMT-6" package="TACTILE_SMD-6MM">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11872642/2"/>
+</package3dinstances>
 <technologies>
 <technology name=""/>
 </technologies>
@@ -1475,7 +1632,7 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="J2" library="freetronics-master-v1" deviceset="M08" device="" value="Analog_0_7"/>
 <part name="J1" library="freetronics" deviceset="M08" device="" value="Digital_0_7"/>
 <part name="J3" library="freetronics-original" deviceset="M10" device="0.1" value="Digital_8_13"/>
-<part name="S1" library="freetronics-master-v1" deviceset="TAC_SWITCH" device="PTH" value="RESET"/>
+<part name="S1" library="SuperHouse-Switches" library_urn="urn:adsk.eagle:library:11744182" deviceset="TAC_SWITCH" device="-PTH-6" package3d_urn="urn:adsk.eagle:package:11765874/2" value="RESET"/>
 <part name="GND" library="freetronics-original" deviceset="GND" device=""/>
 <part name="J4" library="freetronics-master-v1" deviceset="M08" device="" value="Analog_8_15"/>
 <part name="J5" library="freetronics" deviceset="M08" device="" value="Digital_14_21"/>
@@ -1485,14 +1642,14 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <part name="J9" library="freetronics" deviceset="M08" device="" value="Digital_39_53"/>
 <part name="ICSP" library="pinhead" deviceset="PINHD-2X3" device="" value="ICSP:MAIN"/>
 <part name="J10" library="freetronics-master-v1" deviceset="M08" device="" value="Power"/>
-<part name="JP11" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP12" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP13" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP14" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP15" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP2" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP3" library="freetronics-jon" deviceset="M06X2" device=""/>
-<part name="JP4" library="freetronics-jon" deviceset="M06X2" device=""/>
+<part name="JP11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP13" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP14" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP15" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP3" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="JP4" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
 <part name="GND1" library="freetronics-original" deviceset="GND" device=""/>
 <part name="GND2" library="freetronics-original" deviceset="GND" device=""/>
 <part name="GND4" library="freetronics-original" deviceset="GND" device=""/>
@@ -1538,7 +1695,10 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="91.44" y1="73.66" x2="5.08" y2="73.66" width="0.1524" layer="97" style="longdash"/>
 </plain>
 <instances>
-<instance part="J2" gate="G$1" x="15.24" y="124.46" rot="MR180"/>
+<instance part="J2" gate="G$1" x="15.24" y="124.46" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="10.16" y="137.16" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="10.16" y="110.998" size="1.778" layer="95" rot="MR180"/>
+</instance>
 <instance part="J1" gate="G$1" x="231.14" y="121.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="233.172" y="109.22" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="235.966" y="135.636" size="1.778" layer="96" rot="MR0"/>
@@ -1547,9 +1707,17 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="NAME" x="232.918" y="142.494" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="236.474" y="173.736" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="S1" gate="S" x="119.38" y="104.14"/>
-<instance part="GND" gate="1" x="109.22" y="99.06"/>
-<instance part="J4" gate="G$1" x="15.24" y="91.44" rot="MR180"/>
+<instance part="S1" gate="S" x="119.38" y="104.14" smashed="yes">
+<attribute name="NAME" x="116.84" y="110.49" size="1.778" layer="95"/>
+<attribute name="VALUE" x="116.84" y="97.79" size="1.778" layer="96"/>
+</instance>
+<instance part="GND" gate="1" x="109.22" y="99.06" smashed="yes">
+<attribute name="VALUE" x="106.68" y="96.52" size="1.778" layer="96"/>
+</instance>
+<instance part="J4" gate="G$1" x="15.24" y="91.44" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="10.16" y="104.14" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="10.16" y="77.978" size="1.778" layer="95" rot="MR180"/>
+</instance>
 <instance part="J5" gate="G$1" x="231.14" y="88.9" smashed="yes" rot="MR0">
 <attribute name="NAME" x="233.172" y="76.2" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="235.966" y="102.616" size="1.778" layer="96" rot="MR0"/>
@@ -1570,25 +1738,73 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="NAME" x="17.78" y="25.908" size="1.778" layer="95" rot="MR90"/>
 <attribute name="VALUE" x="44.196" y="23.114" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="ICSP" gate="A" x="119.38" y="160.02"/>
-<instance part="J10" gate="G$1" x="15.24" y="160.02" rot="MR180"/>
-<instance part="JP11" gate="G$1" x="60.96" y="127"/>
-<instance part="JP12" gate="G$1" x="60.96" y="93.98"/>
-<instance part="JP13" gate="G$1" x="180.34" y="127"/>
-<instance part="JP14" gate="G$1" x="180.34" y="93.98"/>
-<instance part="JP15" gate="G$1" x="180.34" y="165.1"/>
-<instance part="JP2" gate="G$1" x="60.96" y="60.96"/>
-<instance part="JP3" gate="G$1" x="119.38" y="60.96"/>
-<instance part="JP4" gate="G$1" x="180.34" y="60.96"/>
-<instance part="GND1" gate="1" x="71.12" y="114.3"/>
-<instance part="GND2" gate="1" x="71.12" y="81.28"/>
-<instance part="GND4" gate="1" x="71.12" y="48.26"/>
-<instance part="GND5" gate="1" x="129.54" y="48.26"/>
-<instance part="GND6" gate="1" x="190.5" y="48.26"/>
-<instance part="GND7" gate="1" x="139.7" y="154.94"/>
-<instance part="GND8" gate="1" x="190.5" y="152.4"/>
-<instance part="GND9" gate="1" x="190.5" y="114.3"/>
-<instance part="GND10" gate="1" x="190.5" y="81.28"/>
+<instance part="ICSP" gate="A" x="119.38" y="160.02" smashed="yes">
+<attribute name="NAME" x="113.03" y="165.735" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="J10" gate="G$1" x="15.24" y="160.02" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="10.16" y="172.72" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="10.16" y="146.558" size="1.778" layer="95" rot="MR180"/>
+</instance>
+<instance part="JP11" gate="G$1" x="60.96" y="127" smashed="yes">
+<attribute name="VALUE" x="58.42" y="114.3" size="1.778" layer="96"/>
+<attribute name="NAME" x="58.42" y="135.382" size="1.778" layer="95"/>
+</instance>
+<instance part="JP12" gate="G$1" x="60.96" y="93.98" smashed="yes">
+<attribute name="VALUE" x="58.42" y="81.28" size="1.778" layer="96"/>
+<attribute name="NAME" x="58.42" y="102.362" size="1.778" layer="95"/>
+</instance>
+<instance part="JP13" gate="G$1" x="180.34" y="127" smashed="yes">
+<attribute name="VALUE" x="177.8" y="114.3" size="1.778" layer="96"/>
+<attribute name="NAME" x="177.8" y="135.382" size="1.778" layer="95"/>
+</instance>
+<instance part="JP14" gate="G$1" x="180.34" y="93.98" smashed="yes">
+<attribute name="VALUE" x="177.8" y="81.28" size="1.778" layer="96"/>
+<attribute name="NAME" x="177.8" y="102.362" size="1.778" layer="95"/>
+</instance>
+<instance part="JP15" gate="G$1" x="180.34" y="165.1" smashed="yes">
+<attribute name="VALUE" x="177.8" y="152.4" size="1.778" layer="96"/>
+<attribute name="NAME" x="177.8" y="173.482" size="1.778" layer="95"/>
+</instance>
+<instance part="JP2" gate="G$1" x="60.96" y="60.96" smashed="yes">
+<attribute name="VALUE" x="58.42" y="48.26" size="1.778" layer="96"/>
+<attribute name="NAME" x="58.42" y="69.342" size="1.778" layer="95"/>
+</instance>
+<instance part="JP3" gate="G$1" x="119.38" y="60.96" smashed="yes">
+<attribute name="VALUE" x="116.84" y="48.26" size="1.778" layer="96"/>
+<attribute name="NAME" x="116.84" y="69.342" size="1.778" layer="95"/>
+</instance>
+<instance part="JP4" gate="G$1" x="180.34" y="60.96" smashed="yes">
+<attribute name="VALUE" x="177.8" y="48.26" size="1.778" layer="96"/>
+<attribute name="NAME" x="177.8" y="69.342" size="1.778" layer="95"/>
+</instance>
+<instance part="GND1" gate="1" x="71.12" y="114.3" smashed="yes">
+<attribute name="VALUE" x="68.58" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="71.12" y="81.28" smashed="yes">
+<attribute name="VALUE" x="68.58" y="78.74" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="71.12" y="48.26" smashed="yes">
+<attribute name="VALUE" x="68.58" y="45.72" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="129.54" y="48.26" smashed="yes">
+<attribute name="VALUE" x="127" y="45.72" size="1.778" layer="96"/>
+</instance>
+<instance part="GND6" gate="1" x="190.5" y="48.26" smashed="yes">
+<attribute name="VALUE" x="187.96" y="45.72" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="139.7" y="154.94" smashed="yes">
+<attribute name="VALUE" x="137.16" y="152.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND8" gate="1" x="190.5" y="152.4" smashed="yes">
+<attribute name="VALUE" x="187.96" y="149.86" size="1.778" layer="96"/>
+</instance>
+<instance part="GND9" gate="1" x="190.5" y="114.3" smashed="yes">
+<attribute name="VALUE" x="187.96" y="111.76" size="1.778" layer="96"/>
+</instance>
+<instance part="GND10" gate="1" x="190.5" y="81.28" smashed="yes">
+<attribute name="VALUE" x="187.96" y="78.74" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -2728,4 +2944,21 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 </errors>
 </schematic>
 </drawing>
+<compatibility>
+<note version="8.2" severity="warning">
+Since Version 8.2, EAGLE supports online libraries. The ids
+of those online libraries will not be understood (or retained)
+with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
