@@ -5,6 +5,8 @@ SuperHouse site:  <www.superhouse.tv>
 
 Breaks out sets of I/O pins to 2x6 pin headers.
 
+![PCB render](IOBRMEGA-v2_1-render_1.jpg)
+
 Features:
 
  * 8 x 2x6 shrouded pin headers
