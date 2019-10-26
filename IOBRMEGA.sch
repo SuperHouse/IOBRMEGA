@@ -215,9 +215,9 @@
 </deviceset>
 </devicesets>
 </library>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <packages>
-<package name="2X03">
+<package name="2X03" urn="urn:adsk.eagle:footprint:22348/1" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
@@ -256,7 +256,7 @@
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 </package>
-<package name="2X03/90">
+<package name="2X03/90" urn="urn:adsk.eagle:footprint:22349/1" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
 <wire x1="-1.27" y1="-1.905" x2="-1.27" y2="0.635" width="0.1524" layer="21"/>
@@ -293,8 +293,22 @@
 <rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-2.921" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03"/>
+</packageinstances>
+</package3d>
+<package3d name="2X03/90" urn="urn:adsk.eagle:package:22464/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03/90"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
-<symbol name="PINH2X3">
+<symbol name="PINH2X3" urn="urn:adsk.eagle:symbol:22347/1" library_version="4">
 <wire x1="-6.35" y1="-5.08" x2="8.89" y2="-5.08" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="-5.08" x2="8.89" y2="5.08" width="0.4064" layer="94"/>
 <wire x1="8.89" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
@@ -310,7 +324,7 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="PINHD-2X3" prefix="JP" uservalue="yes">
+<deviceset name="PINHD-2X3" urn="urn:adsk.eagle:component:22532/4" prefix="JP" uservalue="yes" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="PINH2X3" x="0" y="0"/>
@@ -325,8 +339,13 @@
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22462/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="62" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="/90" package="2X03/90">
@@ -338,8 +357,13 @@
 <connect gate="A" pin="5" pad="5"/>
 <connect gate="A" pin="6" pad="6"/>
 </connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:22464/2"/>
+</package3dinstances>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="POPULARITY" value="2" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -348,7 +372,8 @@
 </library>
 <library name="SuperHouse-Connectors" urn="urn:adsk.eagle:library:11765989">
 <packages>
-<package name="2X6-SHROUDED" urn="urn:adsk.eagle:footprint:11976014/1" library_version="42">
+<package name="2X06-SHROUDED" urn="urn:adsk.eagle:footprint:11976014/4" library_version="141">
+<description>2x6 shrouded (box) header</description>
 <wire x1="-1.505" y1="0.635" x2="-1.505" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="5.77" y1="5.02" x2="5.77" y2="-17.72" width="0.2032" layer="21"/>
 <wire x1="-3.23" y1="-17.72" x2="-3.23" y2="-8.55" width="0.2032" layer="21"/>
@@ -377,7 +402,7 @@
 <pad name="11" x="0" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <pad name="12" x="2.54" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <text x="-1.651" y="5.334" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<text x="-1.651" y="-18.542" size="0.4064" layer="104">&gt;NAME</text>
+<text x="-1.651" y="-18.542" size="0.4064" layer="25">&gt;NAME</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-2.794" x2="2.794" y2="-2.286" layer="51" rot="R270"/>
@@ -1211,9 +1236,10 @@
 </package>
 </packages>
 <packages3d>
-<package3d name="2X6-SHROUDED" urn="urn:adsk.eagle:package:11976015/2" type="model" library_version="42">
+<package3d name="2X6-SHROUDED" urn="urn:adsk.eagle:package:11976015/5" type="model" library_version="141">
+<description>2x6 shrouded (box) header</description>
 <packageinstances>
-<packageinstance name="2X6-SHROUDED"/>
+<packageinstance name="2X06-SHROUDED"/>
 </packageinstances>
 </package3d>
 <package3d name="HDRV8W64P254_1X8_2032X254X838C" urn="urn:adsk.eagle:package:14732715/3" type="model" library_version="141">
@@ -1375,13 +1401,13 @@
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="M06X2" urn="urn:adsk.eagle:component:11976016/2" library_version="42">
+<deviceset name="M02X6" urn="urn:adsk.eagle:component:11976016/6" library_version="141">
 <description>M12 header in 2x6 format</description>
 <gates>
 <gate name="G$1" symbol="M06X2" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-SHROUDED" package="2X6-SHROUDED">
+<device name="-SHROUDED" package="2X06-SHROUDED">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="10" pad="10"/>
@@ -1397,7 +1423,7 @@
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11976015/5"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1731,7 +1757,7 @@ Standard 1x10 header, and screw terminal variations</description>
 <pad name="4" x="6.25" y="-2.5" drill="1.5"/>
 <text x="-2.54" y="6.81" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 </package>
-<package name="TACTILE_SMD-6MM" urn="urn:adsk.eagle:footprint:11872641/1" library_version="12">
+<package name="TACTILE_SMT-6MM" urn="urn:adsk.eagle:footprint:11872641/2" library_version="18">
 <description>SMT tactile button</description>
 <wire x1="-1.54" y1="-2.54" x2="-2.54" y2="-1.54" width="0.2032" layer="51"/>
 <wire x1="-2.54" y1="-1.24" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
@@ -1752,6 +1778,23 @@ Standard 1x10 header, and screw terminal variations</description>
 <text x="-0.889" y="1.778" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
 </package>
+<package name="TACTILE_SMT-4.5MM" urn="urn:adsk.eagle:footprint:12231066/2" library_version="18">
+<description>SMT tactile button</description>
+<wire x1="-2.25" y1="-2.25" x2="-2.25" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="2.25" x2="2.25" y2="2.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="2.25" x2="2.25" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="-2.25" x2="-2.25" y2="-2.25" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="1.905" y2="0.445" width="0.127" layer="51"/>
+<wire x1="1.905" y1="0.445" x2="2.16" y2="-0.01" width="0.127" layer="51"/>
+<wire x1="1.905" y1="-0.23" x2="1.905" y2="-1.115" width="0.127" layer="51"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
+<smd name="1" x="-3.5" y="1.6" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="-3.5" y="-1.6" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="4" x="3.5" y="-1.6" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="3.5" y="1.6" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<text x="-0.889" y="1.6" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.889" y="-2.032" size="0.4064" layer="27">&gt;Value</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="TACTILE-PTH-6MM" urn="urn:adsk.eagle:package:11765874/2" type="model" library_version="12">
@@ -1759,20 +1802,26 @@ Standard 1x10 header, and screw terminal variations</description>
 <packageinstance name="TACTILE-PTH-6MM"/>
 </packageinstances>
 </package3d>
-<package3d name="TACTILE-PTH-4.5MM" urn="urn:adsk.eagle:package:7066371/1" type="box" library_version="12">
-<packageinstances>
-<packageinstance name="TACTILE-PTH-4.5MM"/>
-</packageinstances>
-</package3d>
 <package3d name="TACTILE-PTH-12MM" urn="urn:adsk.eagle:package:7066386/2" type="model" library_version="12">
 <packageinstances>
 <packageinstance name="TACTILE-PTH-12MM"/>
 </packageinstances>
 </package3d>
-<package3d name="TACTILE_SMD-6MM" urn="urn:adsk.eagle:package:11872642/2" type="model" library_version="12">
+<package3d name="TACTILE-PTH-4.5MM" urn="urn:adsk.eagle:package:7066371/2" type="model" library_version="18">
+<packageinstances>
+<packageinstance name="TACTILE-PTH-4.5MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SMD-6MM" urn="urn:adsk.eagle:package:11872642/3" type="model" library_version="18">
 <description>SMT tactile button</description>
 <packageinstances>
-<packageinstance name="TACTILE_SMD-6MM"/>
+<packageinstance name="TACTILE_SMT-6MM"/>
+</packageinstances>
+</package3d>
+<package3d name="TACTILE_SMD-4.5MM" urn="urn:adsk.eagle:package:12231067/3" type="model" library_version="18">
+<description>SMT tactile button</description>
+<packageinstances>
+<packageinstance name="TACTILE_SMT-4.5MM"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -1800,14 +1849,14 @@ Standard 1x10 header, and screw terminal variations</description>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="TAC_SWITCH" urn="urn:adsk.eagle:component:11765875/4" prefix="S" uservalue="yes" library_version="12">
+<deviceset name="TAC_SWITCH" urn="urn:adsk.eagle:component:11765875/8" prefix="S" uservalue="yes" library_version="18">
 <description>&lt;b&gt;Momentary Switch&lt;/b&gt;
 Tactile switch, normally-open.</description>
 <gates>
 <gate name="S" symbol="SWITCH-MOMENTARY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="4.5" package="TACTILE-PTH-4.5MM">
+<device name="-PTH-4.5" package="TACTILE-PTH-4.5MM">
 <connects>
 <connect gate="S" pin="1" pad="1"/>
 <connect gate="S" pin="2" pad="2"/>
@@ -1815,7 +1864,7 @@ Tactile switch, normally-open.</description>
 <connect gate="S" pin="4" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:7066371/1"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:7066371/2"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1849,7 +1898,7 @@ Tactile switch, normally-open.</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-SMT-6" package="TACTILE_SMD-6MM">
+<device name="-SMT-6" package="TACTILE_SMT-6MM">
 <connects>
 <connect gate="S" pin="1" pad="1"/>
 <connect gate="S" pin="2" pad="2"/>
@@ -1857,7 +1906,21 @@ Tactile switch, normally-open.</description>
 <connect gate="S" pin="4" pad="4"/>
 </connects>
 <package3dinstances>
-<package3dinstance package3d_urn="urn:adsk.eagle:package:11872642/2"/>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11872642/3"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-SMT-4.5" package="TACTILE_SMT-4.5MM">
+<connects>
+<connect gate="S" pin="1" pad="1"/>
+<connect gate="S" pin="2" pad="2"/>
+<connect gate="S" pin="3" pad="3"/>
+<connect gate="S" pin="4" pad="4"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:12231067/3"/>
 </package3dinstances>
 <technologies>
 <technology name=""/>
@@ -1890,16 +1953,16 @@ Tactile switch, normally-open.</description>
 <part name="J7" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M08" device="-PIN-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_23_37"/>
 <part name="J8" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M08" device="-PIN-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_38_52"/>
 <part name="J9" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M08" device="-PIN-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_39_53"/>
-<part name="J19" library="pinhead" deviceset="PINHD-2X3" device="" value="ICSP:MAIN"/>
+<part name="J19" library="pinhead" library_urn="urn:adsk.eagle:library:325" deviceset="PINHD-2X3" device="" package3d_urn="urn:adsk.eagle:package:22462/2" value="ICSP:MAIN"/>
 <part name="J10" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M08" device="-PIN-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Power"/>
-<part name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J17" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J16" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J18" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J13" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J14" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
-<part name="J15" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M06X2" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2"/>
+<part name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J17" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J16" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J18" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J13" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J14" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
+<part name="J15" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" deviceset="M02X6" device="-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5"/>
 <part name="GND1" library="freetronics-original" deviceset="GND" device=""/>
 <part name="GND2" library="freetronics-original" deviceset="GND" device=""/>
 <part name="GND4" library="freetronics-original" deviceset="GND" device=""/>

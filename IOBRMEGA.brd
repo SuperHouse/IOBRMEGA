@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -188,7 +188,7 @@
 <layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <board>
-<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:fFGx37SuStOcFgXmwvLtcg" pcbguid="67ed23d3-3e02-45bf-b711-b65f26bc5793" lastpulledtime="" lastsyncedchangeguid="43f00d8f-981a-3ba0-c5a4-bea3bddbad07"/>
+<fusionsync huburn="a.cGVyc29uYWw6dWUyZDliZmNi" projecturn="a.cGVyc29uYWw6dWUyZDliZmNiIzIwMTkwNjE5MTk5NjgzNjgx" f3durn="urn:adsk.wipprod:dm.lineage:fFGx37SuStOcFgXmwvLtcg" pcbguid="67ed23d3-3e02-45bf-b711-b65f26bc5793" lastpulledtime="" lastsyncedchangeguid="8912bb72-27f8-6bc6-b7bf-fc0598db44de"/>
 <plain>
 <wire x1="0" y1="2.54" x2="2.54" y2="0" width="0" layer="20" curve="90"/>
 <wire x1="2.54" y1="0" x2="81.28" y2="0" width="0" layer="20"/>
@@ -930,7 +930,7 @@ IOBRMEGA</text>
 <text x="60.452" y="36.83" size="1.778" layer="22" font="vector" ratio="18" rot="MR180" align="center-left">31</text>
 <text x="56.134" y="34.29" size="1.778" layer="22" font="vector" ratio="18" rot="MR180" align="center-right">VIN</text>
 <text x="56.134" y="31.75" size="1.0668" layer="22" font="vector" ratio="18" rot="MR180" align="center-right">IOREF</text>
-<text x="60.706" y="34.29" size="1.778" layer="22" ratio="18" rot="MR180" align="center-left">G</text>
+<text x="60.706" y="34.29" size="1.778" layer="22" font="vector" ratio="18" rot="MR180" align="center-left">G</text>
 <text x="60.452" y="31.75" size="1.016" layer="22" font="vector" ratio="18" rot="MR180" align="center-left">RES</text>
 <text x="73.406" y="34.29" size="1.778" layer="22" font="vector" ratio="18" rot="MR180" align="center-left">G</text>
 <text x="73.152" y="31.75" size="1.016" layer="22" font="vector" ratio="18" rot="MR180" align="center-left">RES</text>
@@ -947,9 +947,9 @@ IOBRMEGA</text>
 <text x="31.232" y="25.35" size="1.016" layer="21" font="vector" ratio="18">by Jon Oxer</text>
 </plain>
 <libraries>
-<library name="pinhead">
+<library name="pinhead" urn="urn:adsk.eagle:library:325">
 <packages>
-<package name="2X03">
+<package name="2X03" urn="urn:adsk.eagle:footprint:22348/1" library_version="4">
 <description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.1524" layer="21"/>
 <wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.1524" layer="21"/>
@@ -989,10 +989,19 @@ IOBRMEGA</text>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 </package>
 </packages>
+<packages3d>
+<package3d name="2X03" urn="urn:adsk.eagle:package:22462/2" type="model" library_version="4">
+<description>PIN HEADER</description>
+<packageinstances>
+<packageinstance name="2X03"/>
+</packageinstances>
+</package3d>
+</packages3d>
 </library>
 <library name="SuperHouse-Connectors" urn="urn:adsk.eagle:library:11765989">
 <packages>
-<package name="2X6-SHROUDED" urn="urn:adsk.eagle:footprint:11976014/1" library_version="42">
+<package name="2X06-SHROUDED" urn="urn:adsk.eagle:footprint:11976014/4" library_version="141">
+<description>2x6 shrouded (box) header</description>
 <wire x1="-1.505" y1="0.635" x2="-1.505" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="5.77" y1="5.02" x2="5.77" y2="-17.72" width="0.2032" layer="21"/>
 <wire x1="-3.23" y1="-17.72" x2="-3.23" y2="-8.55" width="0.2032" layer="21"/>
@@ -1021,7 +1030,7 @@ IOBRMEGA</text>
 <pad name="11" x="0" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <pad name="12" x="2.54" y="-12.7" drill="1.016" shape="octagon" rot="R270"/>
 <text x="-1.651" y="5.334" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<text x="-1.651" y="-18.542" size="0.4064" layer="104">&gt;NAME</text>
+<text x="-1.651" y="-18.542" size="0.4064" layer="25">&gt;NAME</text>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51" rot="R270"/>
 <rectangle x1="2.286" y1="-2.794" x2="2.794" y2="-2.286" layer="51" rot="R270"/>
@@ -1197,9 +1206,10 @@ IOBRMEGA</text>
 </package>
 </packages>
 <packages3d>
-<package3d name="2X6-SHROUDED" urn="urn:adsk.eagle:package:11976015/2" type="model" library_version="42">
+<package3d name="2X6-SHROUDED" urn="urn:adsk.eagle:package:11976015/5" type="model" library_version="141">
+<description>2x6 shrouded (box) header</description>
 <packageinstances>
-<packageinstance name="2X6-SHROUDED"/>
+<packageinstance name="2X06-SHROUDED"/>
 </packageinstances>
 </package3d>
 <package3d name="HDRV8W64P254_1X8_2032X254X838C" urn="urn:adsk.eagle:package:14732715/3" type="model" library_version="141">
@@ -1452,82 +1462,83 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="J2" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Analog_0_7" x="35.56" y="2.54" smashed="yes">
-<attribute name="NAME" x="34.2138" y="4.3688" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="39.2138" y="3.3688" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="34.29" y="-0.635" size="1.27" layer="27"/>
 </element>
 <element name="J1" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_0_7" x="48.26" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="49.6062" y="48.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="47.6062" y="49.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="49.53" y="53.975" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="J3" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X10-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732815/2" value="Digital_8_13" x="26.416" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="27.7622" y="48.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="25.7622" y="49.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="27.686" y="53.975" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="S1" library="SuperHouse-Switches" library_urn="urn:adsk.eagle:library:11744182" package="TACTILE-PTH-6MM" package3d_urn="urn:adsk.eagle:package:11765874/2" value="RESET" x="6.096" y="4.572" smashed="yes">
-<attribute name="NAME" x="3.556" y="8.382" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="5.556" y="6.382" size="1.27" layer="25" ratio="10"/>
 </element>
 <element name="J4" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Analog_8_15" x="58.42" y="2.54" smashed="yes">
-<attribute name="NAME" x="57.0738" y="4.3688" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="61.0738" y="3.3688" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="57.15" y="-0.635" size="1.27" layer="27"/>
 </element>
 <element name="J5" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_14_21" x="71.12" y="50.8" smashed="yes" rot="R180">
-<attribute name="NAME" x="72.4662" y="48.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="68.4662" y="49.9712" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="VALUE" x="72.39" y="53.975" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="J6" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_22_36" x="78.74" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.9112" y="29.1338" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="76.1338" y="31.0888" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="81.915" y="29.21" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="J7" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_23_37" x="81.28" y="30.48" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.4512" y="29.1338" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="82.1338" y="33.5488" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="84.455" y="29.21" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="J8" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_38_52" x="78.74" y="10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="76.9112" y="8.8138" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="77.8138" y="8.0888" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="81.915" y="8.89" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="J9" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Digital_39_53" x="81.28" y="10.16" smashed="yes" rot="R90">
-<attribute name="NAME" x="79.4512" y="8.8138" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="NAME" x="82.8138" y="10.5488" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="84.455" y="8.89" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="J19" library="pinhead" package="2X03" value="ICSP:MAIN" x="49.657" y="27.94" smashed="yes" rot="R270">
-<attribute name="NAME" x="52.832" y="31.75" size="1.27" layer="25" ratio="10" rot="R270"/>
+<element name="J19" library="pinhead" library_urn="urn:adsk.eagle:library:325" package="2X03" package3d_urn="urn:adsk.eagle:package:22462/2" value="ICSP:MAIN" x="49.657" y="27.94" smashed="yes" rot="R270">
+<attribute name="NAME" x="48.25" y="31.832" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="62" x="49.657" y="27.94" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="45.212" y="31.75" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="J10" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="1X08-P-BELOW" package3d_urn="urn:adsk.eagle:package:14732715/3" value="Power" x="12.7" y="2.54" smashed="yes">
-<attribute name="NAME" x="11.3538" y="4.3688" size="1.27" layer="25" ratio="10"/>
+<attribute name="NAME" x="17.3538" y="3.3688" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="11.43" y="-0.635" size="1.27" layer="27"/>
 </element>
-<element name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="33.02" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.562" y="12.319" size="0.4064" layer="104" rot="R90"/>
+<element name="J11" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="33.02" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="34.319" y="17.438" size="1.27" layer="25"/>
 <attribute name="VALUE" x="27.686" y="12.319" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="57.15" y="21.59" smashed="yes">
-<attribute name="NAME" x="55.499" y="3.048" size="0.4064" layer="104"/>
+<element name="J12" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="57.15" y="21.59" smashed="yes">
+<attribute name="NAME" x="57.499" y="23.048" size="1.27" layer="25"/>
 <attribute name="VALUE" x="55.499" y="26.924" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="J17" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="22.86" y="16.51" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.318" y="18.161" size="0.4064" layer="104" rot="R270"/>
+<element name="J17" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="22.86" y="16.51" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.839" y="17.318" size="1.27" layer="25"/>
 <attribute name="VALUE" x="28.194" y="18.161" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="J16" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="33.02" y="36.83" smashed="yes" rot="R90">
-<attribute name="NAME" x="51.562" y="35.179" size="0.4064" layer="104" rot="R90"/>
+<element name="J16" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="33.02" y="36.83" smashed="yes" rot="R90">
+<attribute name="NAME" x="33.179" y="40.438" size="1.27" layer="25"/>
 <attribute name="VALUE" x="27.686" y="35.179" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="J18" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="22.86" y="39.37" smashed="yes" rot="R270">
-<attribute name="NAME" x="4.318" y="41.021" size="0.4064" layer="104" rot="R270"/>
+<element name="J18" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="22.86" y="39.37" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.979" y="40.318" size="1.27" layer="25"/>
 <attribute name="VALUE" x="28.194" y="41.021" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
-<element name="J13" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="69.85" y="21.59" smashed="yes">
-<attribute name="NAME" x="68.199" y="3.048" size="0.4064" layer="104"/>
+<element name="J13" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="69.85" y="21.59" smashed="yes">
+<attribute name="NAME" x="70.199" y="23.048" size="1.27" layer="25"/>
 <attribute name="VALUE" x="68.199" y="26.924" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="J14" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="69.85" y="44.45" smashed="yes">
-<attribute name="NAME" x="68.199" y="25.908" size="0.4064" layer="104"/>
+<element name="J14" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="69.85" y="44.45" smashed="yes">
+<attribute name="NAME" x="69.199" y="44.908" size="1.27" layer="25"/>
 <attribute name="VALUE" x="68.199" y="49.784" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="J15" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X6-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/2" value="M06X2-SHROUDED" x="57.15" y="44.45" smashed="yes">
-<attribute name="NAME" x="55.499" y="25.908" size="0.4064" layer="104"/>
+<element name="J15" library="SuperHouse-Connectors" library_urn="urn:adsk.eagle:library:11765989" package="2X06-SHROUDED" package3d_urn="urn:adsk.eagle:package:11976015/5" value="M02X6-SHROUDED" x="57.15" y="44.45" smashed="yes">
+<attribute name="NAME" x="57.499" y="45.908" size="1.27" layer="25"/>
 <attribute name="VALUE" x="55.499" y="49.784" size="0.4064" layer="27" font="vector"/>
 </element>
 </elements>
